@@ -3,22 +3,26 @@ import Image from "next/image";
 import { useState } from "react";
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80", // Construction site
-  "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80", // Modern building
-  "https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?auto=format&fit=crop&w=800&q=80", // Teamwork
-  "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"  // Machinery
+  "/hero.png",
+  "/hero 2.png",
+  "/modern officebuilding.png",
+  "/resedentialhome.png",
+  "/heavy machinery.png",
+  "/closeup.png",
+  "/teamofengineers.png",
+  "/portrait.png"
 ];
 
 function Gallery() {
   const [zoomed, setZoomed] = useState<number | null>(null);
   return (
-    <div className="grid grid-cols-2 gap-6 py-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 max-w-5xl mx-auto">
       {galleryImages.map((src, i) => (
         <div key={i} className="relative group cursor-pointer" onClick={() => setZoomed(i)}>
-          <Image src={src.replace('/public', '')} alt="Project" width={400} height={300} className="rounded-lg transition-transform duration-300 group-hover:scale-105" />
+          <Image src={src} alt="Project" width={500} height={350} className="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105" />
           {zoomed === i && (
             <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50" onClick={() => setZoomed(null)}>
-              <Image src={src.replace('/public', '')} alt="Zoomed" width={800} height={600} className="rounded-lg shadow-2xl" />
+              <Image src={src} alt="Zoomed" width={900} height={650} className="rounded-lg shadow-2xl" />
             </div>
           )}
         </div>
@@ -65,11 +69,11 @@ function Testimonials() {
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen">
+  <main className="bg-gradient-to-br from-blue-100 to-gray-50 min-h-screen font-sans">
       <section className="py-16 text-center">
-        <h1 className="text-5xl font-extrabold mb-4 text-blue-900">Clayton Construction</h1>
-        <p className="text-xl text-gray-700 mb-8">Building South Africa's future with quality, innovation, and trust.</p>
-        <a href="#quote" className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">Get an Instant Quote</a>
+        <h1 className="text-6xl font-extrabold mb-6 text-blue-900 drop-shadow-lg">Clayton Construction</h1>
+        <p className="text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">Building South Africa's future with quality, innovation, and trust. We deliver world-class projects with a focus on safety, sustainability, and client satisfaction.</p>
+        <a href="#quote" className="bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition text-lg font-semibold">Get an Instant Quote</a>
       </section>
       <Gallery />
       <section id="quote">
