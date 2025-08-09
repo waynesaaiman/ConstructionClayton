@@ -52,15 +52,15 @@ function Testimonials() {
       <h2 className="text-3xl font-bold text-center mb-8">What Our Clients Say</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <div className="bg-white p-6 rounded-lg shadow text-center">
-          <p className="italic">"Clayton Construction exceeded our expectations!"</p>
+          <p className="italic">&quot;Clayton Construction exceeded our expectations!&quot;</p>
           <span className="block mt-4 font-bold">- Sarah M.</span>
         </div>
         <div className="bg-white p-6 rounded-lg shadow text-center">
-          <p className="italic">"Professional, reliable, and top quality workmanship."</p>
+          <p className="italic">&quot;Professional, reliable, and top quality workmanship.&quot;</p>
           <span className="block mt-4 font-bold">- John D.</span>
         </div>
         <div className="bg-white p-6 rounded-lg shadow text-center">
-          <p className="italic">"Highly recommend for any building project!"</p>
+          <p className="italic">&quot;Highly recommend for any building project!&quot;</p>
           <span className="block mt-4 font-bold">- Lisa R.</span>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function Home() {
   <main className="bg-gradient-to-br from-blue-100 to-gray-50 min-h-screen font-sans">
       <section className="py-16 text-center">
         <h1 className="text-6xl font-extrabold mb-6 text-blue-900 drop-shadow-lg">Clayton Construction</h1>
-        <p className="text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">Building South Africa's future with quality, innovation, and trust. We deliver world-class projects with a focus on safety, sustainability, and client satisfaction.</p>
+  <p className="text-2xl text-gray-700 mb-10 max-w-2xl mx-auto">Building South Africa&apos;s future with quality, innovation, and trust. We deliver world-class projects with a focus on safety, sustainability, and client satisfaction.</p>
         <a href="#quote" className="bg-blue-600 text-white px-8 py-4 rounded-lg shadow-lg hover:bg-blue-700 transition text-lg font-semibold">Get an Instant Quote</a>
       </section>
       <Gallery />
