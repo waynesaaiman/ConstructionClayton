@@ -11,7 +11,7 @@ const AboutPage = () => {
             Clayton Construction was founded in 2010 by Clayton Khojane with a vision to provide top-notch construction services to clients in the region. Over the years, we have grown into a reputable company known for our commitment to quality, safety, and customer satisfaction.
           </p>
           <p className="text-gray-600">
-            Our team of experienced professionals is dedicated to delivering projects on time and within budget. We take pride in our work and strive to exceed our clients' expectations on every project.
+            Our team of experienced professionals is dedicated to delivering projects on time and within budget. We take pride in our work and strive to exceed our clients&apos; expectations on every project.
           </p>
         </div>
         <div className="text-center">
